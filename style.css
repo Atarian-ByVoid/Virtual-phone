@@ -17,7 +17,7 @@ body {
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 24px;
-  color: rgb(29,40,43);
+  color: rgb(29, 42, 46);
 }
 
 input {
@@ -32,7 +32,7 @@ input {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
-    background-color: rgb(169,97,59);
+    background-color: rgba(169, 98, 59, 0.542);
     border-radius: 5px;
     padding: 10px;
     -webkit-border-radius: 5px;
@@ -67,19 +67,22 @@ input[type="button"]{
     -o-border-radius: 4px;
     font-size: 22px;
     cursor: pointer;
-    background-image: linear-gradient(to left, #e6e6e6, #000000);
-    animation: gradient 1s ease-in-out infinite;
-    -webkit-animation: gradient 1s ease-in-out infinite;
+
 }
 
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+input[type=button]:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+input[type=tel] {
+  background-color: #cccccc;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 22px;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 280px;
+}
